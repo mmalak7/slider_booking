@@ -15,11 +15,23 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Container(
-          padding: const EdgeInsets.all(50),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+          padding: const EdgeInsets.fromLTRB(50, 100, 0, 0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
               _buildStackText(),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
+                child: Text(
+                  "You can use any illustration",
+                  style: TextStyle(
+                      fontWeight: FontWeight.w600,
+                      fontSize: 15,
+                      letterSpacing: 1.5,
+                      // color: Color(0xFFf1eff5)),
+                      color: Color(0xFFc4bab7)),
+                ),
+              )
             ],
           )),
     );
@@ -30,7 +42,7 @@ class _HomeState extends State<Home> {
         Container(
           width: 70,
           height: 15,
-          color: Colors.yellow,
+          color: Color(0xFFffd323),
         ),
         Text(
           "Use any Illustration",
