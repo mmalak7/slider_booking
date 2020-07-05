@@ -31,7 +31,22 @@ class _HomeState extends State<Home> {
                       // color: Color(0xFFf1eff5)),
                       color: Color(0xFFc4bab7)),
                 ),
-              )
+              ),
+              //tu idzie slider z image różnymi!
+              //tu idzie button
+              FlatButton(
+                color: Color(0xFF019793),
+                textColor: Colors.white,
+                padding: const EdgeInsets.fromLTRB(50.0, 20.0, 50.0, 20.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(35.0),
+                ),
+                onPressed: () {},
+                child: Text(
+                  "Choose",
+                  style: TextStyle(fontSize: 20.0),
+                ),
+              ),
             ],
           )),
     );
